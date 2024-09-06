@@ -1,8 +1,9 @@
 ---
-
+// Henter parametrene fra Astro
+const { overskrift, tekst } = Astro.props;
 ---
 
 <div>
-  <h2 class="font-sans text-2xl font-bold">Kapitel 1 - Intro til streetfoot</h2>
-  <p class="font-sans text-lg leading-7"><slot /></p>
+  <h2 class="font-sans text-2xl font-bold">{overskrift}</h2>
+  <p class="font-sans text-lg leading-7">{tekst}</p>
 </div>
